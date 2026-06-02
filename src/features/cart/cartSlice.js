@@ -53,3 +53,5 @@ export const getTotalCartQunatity=(state)=>
 
 export const getTotalCartPrice=(state)=>
     state.cart.cart.reduce((sum,item)=> sum+item.totalPrice,0)
+
+export const getCart=(state)=>state.cart.cart;
